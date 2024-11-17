@@ -1,0 +1,61 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.profile-pic {
+  width: 150px; /* Ajuste para controlar o tamanho da imagem */
+  height: 150px; /* Garante que a imagem seja quadrada */
+  border-radius: 50%; /* Deixa a imagem redonda */
+  border: 3px solid #ffffff; /* Adiciona uma borda branca */
+  margin-bottom: 15px; /* Espaço entre a imagem e o texto */
+  object-fit: cover; /* Ajusta a imagem para caber no círculo */
+}
+
+.name {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #dcdcdc;
+}
